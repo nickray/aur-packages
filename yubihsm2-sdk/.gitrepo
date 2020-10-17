@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:nickray/aur-yubihsm2-sdk
+	branch = master
+	commit = d8033045bd5aa498b79ada80e75d48689b95dde5
+	parent = 6083e67743b2053b619d9d076b2977ad7daee835
+	method = merge
+	cmdver = 0.4.1
