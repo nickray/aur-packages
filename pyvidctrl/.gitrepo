@@ -4,9 +4,9 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-	remote = git@github.com:nickray/aur-pyvidctrl
+	remote = ssh://aur@aur.archlinux.org/pyvidctrl.git
 	branch = master
 	commit = bc4ef0a643c06e6621d66b63ab6a9d1874fc64f8
-	parent = 085ef37633ac5ca5ace382726d2c189a2f303361
+	parent = 7b48c2de0e4253f64002da2c6d43fe03953b13d8
 	method = merge
 	cmdver = 0.4.1
