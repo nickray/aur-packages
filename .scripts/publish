@@ -1,0 +1,21 @@
+#!/usr/bin/bash -e
+
+if [ -z "$1" ]
+  then
+    echo "No package supplied"
+	echo "make publish PKG=<package directory>"
+fi
+
+pkg=${1}
+
+cd $pkg
+make package
+make install
+make update-srcinfo
+git add .
+git commit
+
+cd ..
+git subrepo push "$pkg" --remote="git@github.com:nickray/aur-$pkg"
+git subrepo fetch "$pkg"
+git subrepo push "$pkg" --remote=ssh://aur@aur.archlinux.org/$pkg.git
