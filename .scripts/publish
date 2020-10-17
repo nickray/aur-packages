@@ -15,7 +15,18 @@ make update-srcinfo
 
 git add .
 pkg_pkgver=$(pacman -Q $pkg)
-git commit -m"$pkg_pkgver"
+# a dash of gitmoji
+git commit -m":bookmark: $pkg_pkgver"
+git commit --amend
 
 cd ..
 git subrepo push "$pkg" --remote=ssh://aur@aur.archlinux.org/$pkg.git --branch=master --update
+# only push after actually publishing, i.e., successful subrepo push
+git push main
+tagname=$(echo $pkg_pkgver|tr ' ' '/')
+# ditto for setting/pushing tag
+git tag -a -m"$pkg_pkgver" "$tagname"
+# typically `main`, but...
+# https://stackoverflow.com/a/9753364
+upstream=$(git for-each-ref --format='%(upstream:short)' "$(git symbolic-ref -q HEAD)"|cut -d'/' -f1)
+git push $upstream $tagname
