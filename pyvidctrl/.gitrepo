@@ -6,7 +6,7 @@
 [subrepo]
 	remote = git@github.com:nickray/aur-pyvidctrl
 	branch = master
-	commit = 9b1d4921dbc2251b4d6aea7071d606435b1ee4da
-	parent = 1f930d40b84b0a0ffb4f2c75fe4359246b9755d9
+	commit = bc4ef0a643c06e6621d66b63ab6a9d1874fc64f8
+	parent = 085ef37633ac5ca5ace382726d2c189a2f303361
 	method = merge
 	cmdver = 0.4.1
