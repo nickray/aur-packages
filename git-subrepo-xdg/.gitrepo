@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:nickray/aur-git-subrepo-xdg
+	branch = master
+	commit = 87c410e86109677b6be7b0b124747fd6ee2f8d21
+	parent = e7dbdfc2e0fb4d6ea94fb78bdaf69d92f9d9b5e1
+	method = merge
+	cmdver = 0.4.1
