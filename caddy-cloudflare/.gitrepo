@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:nickray/aur-caddy-cloudflare
+	branch = master
+	commit = 2655c9c2b5e3b194b2b2017ad612074246795cfb
+	parent = e3b19ad72800eb79d600ac7a23c59e9b02e655fc
+	method = merge
+	cmdver = 0.4.1
