@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:nickray/aur-globalplatformpro
+	branch = master
+	commit = 142c2688f964961d093e160e0e5ca5863679150c
+	parent = 501f57a323dbf3ec452a524489aa99845de22344
+	method = merge
+	cmdver = 0.4.1
