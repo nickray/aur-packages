@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = ssh://aur@aur.archlinux.org/otf-authentic-sans
+	branch = master
+	commit = a67cd7a2e9c0da14d02787993d65562cb16538d2
+	parent = 38dab4d6ef25fe3d5f623fa4df7e8ddeb6e0ded6
+	method = merge
+	cmdver = 0.4.1
