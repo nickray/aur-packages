@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:nickray/aur-python-v4l2_antmicro
+	branch = master
+	commit = 73949fb474368edc2a2fdce90d885b1b54d15626
+	parent = 34d03537363a74311188d2036a3aca9cab1e7dc3
+	method = merge
+	cmdver = 0.4.1
