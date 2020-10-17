@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:nickray/aur-jamm-bin
+	branch = master
+	commit = b2ea1ec8d86eab73e1558db5a9716c419af619e4
+	parent = 54c2d93636874101abe693a8f14b264368109ff2
+	method = merge
+	cmdver = 0.4.1
