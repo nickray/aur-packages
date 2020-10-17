@@ -6,7 +6,7 @@
 [subrepo]
 	remote = git@github.com:nickray/aur-git-subrepo-xdg
 	branch = master
-	commit = 87c410e86109677b6be7b0b124747fd6ee2f8d21
-	parent = e7dbdfc2e0fb4d6ea94fb78bdaf69d92f9d9b5e1
+	commit = c1e56d8c4159b6d41817d4b18a21f04d615be672
+	parent = 963e20d7a926a6c51dae2d325814d5a073c90e4c
 	method = merge
 	cmdver = 0.4.1
