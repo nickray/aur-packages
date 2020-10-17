@@ -4,9 +4,9 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-	remote = git@github.com:nickray/aur-git-subrepo-xdg
+	remote = ssh://aur@aur.archlinux.org/git-subrepo-xdg.git
 	branch = master
-	commit = c1e56d8c4159b6d41817d4b18a21f04d615be672
-	parent = 963e20d7a926a6c51dae2d325814d5a073c90e4c
+	commit = d8dd32b88dc2cea7c6fbfef2196465a97bb2c266
+	parent = 908a74c0afd5da7ab750d2248654d9d63f179900
 	method = merge
 	cmdver = 0.4.1
