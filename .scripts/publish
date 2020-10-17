@@ -9,7 +9,7 @@ fi
 pkg=${1}
 
 cd $pkg
-make package
+make build
 make install
 make update-srcinfo
 git add .

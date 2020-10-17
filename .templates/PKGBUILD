@@ -1,0 +1,20 @@
+# Maintainer: Nicolas Stalder <n+archlinux@stalder.io>
+pkgname=TEMPLATE
+pkgver="tba"
+pkgrel=1
+pkgdesc=""
+url=""
+arch=(any)
+license=()
+depends=()
+
+source=()
+sha256sums=()
+
+prepare() {
+  true
+}
+
+package() {
+  true
+}

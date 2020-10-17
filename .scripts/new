@@ -1,0 +1,17 @@
+#!/usr/bin/bash -e
+
+if [ -z "$1" ]
+  then
+    echo "No package supplied"
+	echo "make new PKG=<package directory>"
+fi
+
+pkg=${1}
+
+# git subrepo init $pkg --remote ssh://aur@aur.archlinux.org/${pkg}.git --branch master
+mkdir $pkg
+cp .templates/PKGBUILD $pkg/PKGBUILD
+sed -i "s/TEMPLATE/$pkg/" $pkg/PKGBUILD
+cp .templates/.gitignore $pkg/.gitignore
+cp .templates/Makefile $pkg/Makefile
+sed -i "s/TEMPLATE/$pkg/" $pkg/Makefile
