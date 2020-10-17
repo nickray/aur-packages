@@ -4,9 +4,9 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-	remote = git@github.com:nickray/aur-yubihsm2-sdk
+	remote = ssh://aur@aur.archlinux.org/yubihsm2-sdk.git
 	branch = master
-	commit = d8033045bd5aa498b79ada80e75d48689b95dde5
-	parent = 6083e67743b2053b619d9d076b2977ad7daee835
+	commit = 75e5e1be32452fcd2a7a2f40f0bd06bc3edb7dca
+	parent = e634b09a6d818531a3ee38bc35f474553d9636b8
 	method = merge
 	cmdver = 0.4.1
