@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:nickray/aur-pyvidctrl
+	branch = master
+	commit = 9b1d4921dbc2251b4d6aea7071d606435b1ee4da
+	parent = 1f930d40b84b0a0ffb4f2c75fe4359246b9755d9
+	method = merge
+	cmdver = 0.4.1
