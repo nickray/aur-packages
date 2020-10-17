@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:nickray/aur-endpoint-verification-minimal
+	branch = master
+	commit = e173054c07b8ed1fc7d09a82addfcba07aa53839
+	parent = b5860fbda86dcd29eafdaab7493799bd9d22dbb4
+	method = merge
+	cmdver = 0.4.1
