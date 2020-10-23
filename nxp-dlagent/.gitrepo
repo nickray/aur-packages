@@ -4,8 +4,9 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-	remote = none
+	remote = ssh://aur@aur.archlinux.org/nxp-dlagent.git
 	branch = master
-	commit = 
+	commit = 7e37883a55f2bea53ff1445e6d51bec1af47641c
 	method = merge
 	cmdver = 0.4.1
+	parent = c725b76ee015afa87d0de9127974f61372f9a317
