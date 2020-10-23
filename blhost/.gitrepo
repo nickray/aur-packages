@@ -4,8 +4,9 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-	remote = none
+	remote = ssh://aur@aur.archlinux.org/blhost.git
 	branch = master
-	commit = 
+	commit = af2118fcf1fd9e3e43cd3a793b717091685bb28e
 	method = merge
 	cmdver = 0.4.1
+	parent = 863d5136b4b5264c89cada817a330613be9b527c
