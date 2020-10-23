@@ -4,8 +4,9 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-	remote = none
+	remote = ssh://aur@aur.archlinux.org/elftosb.git
 	branch = master
-	commit = 
+	commit = 7a4054df2101def8fd189685f3be6a4855dc284b
 	method = merge
 	cmdver = 0.4.1
+	parent = a89bb81f7a28c5b2dfbf73bf7e76855cbd8cfa68
