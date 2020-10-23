@@ -17,7 +17,7 @@ make update-srcinfo
 git add .
 pkg_pkgver=$(pacman -Q $pkg)
 # a dash of gitmoji
-git commit -m":bookmark: $pkg_pkgver"
+git commit --allow-empty -m":bookmark: $pkg_pkgver"
 git commit --amend
 
 cd ..
