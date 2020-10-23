@@ -6,6 +6,7 @@ if [ -z "$1" ]; then
 fi
 
 pkg=${1}
+pkg_pkgver=$(pacman -Q $pkg)
 
 # typically `main`, but...
 # https://stackoverflow.com/a/9753364
