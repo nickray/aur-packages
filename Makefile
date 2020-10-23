@@ -8,3 +8,6 @@ just-publish:
 
 new:
 	.scripts/new $(PKG)
+
+init:
+	git subrepo init $(PKG)
