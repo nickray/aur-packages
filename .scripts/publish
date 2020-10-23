@@ -25,6 +25,7 @@ cd ..
 # https://stackoverflow.com/a/9753364
 upstream=$(git for-each-ref --format='%(upstream:short)' "$(git symbolic-ref -q HEAD)"|cut -d'/' -f1)
 # only push after actually publishing, i.e., successful subrepo push
+git subrepo clean
 git subrepo push "$pkg" --remote=ssh://aur@aur.archlinux.org/$pkg.git --branch=master --update
 git push $upstream main
 tagname=$(echo $pkg_pkgver|tr ' ' '/')
