@@ -6,7 +6,7 @@
 [subrepo]
 	remote = ssh://aur@aur.archlinux.org/nxp-dlagent.git
 	branch = master
-	commit = 7e37883a55f2bea53ff1445e6d51bec1af47641c
+	commit = 82579a731811137de36b19360c1eed22c5cc8327
 	method = merge
 	cmdver = 0.4.1
-	parent = c725b76ee015afa87d0de9127974f61372f9a317
+	parent = 10bee017da067793e3f5603df870e8b20f69dd88
