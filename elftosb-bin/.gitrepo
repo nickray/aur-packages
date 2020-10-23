@@ -6,7 +6,7 @@
 [subrepo]
 	remote = ssh://aur@aur.archlinux.org/elftosb-bin.git
 	branch = master
-	commit = 51fa81857b0ce48e2ecaf64943a750eebe2d17d9
+	commit = 4b6e8714798f6b4ca00ab7652a35ddea5d4a3c71
 	method = merge
 	cmdver = 0.4.1
-	parent = bab02caaad52ea971d8d0e8a693c265db39f0093
+	parent = 6e5f9d1a1818f37b881913f8f3133c5941a0b692
