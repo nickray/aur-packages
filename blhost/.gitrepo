@@ -6,7 +6,7 @@
 [subrepo]
 	remote = ssh://aur@aur.archlinux.org/blhost.git
 	branch = master
-	commit = af2118fcf1fd9e3e43cd3a793b717091685bb28e
+	commit = 9fab96b1f01726ff02fbe346a55f9a9e14210bb0
 	method = merge
 	cmdver = 0.4.1
-	parent = 863d5136b4b5264c89cada817a330613be9b527c
+	parent = d977006378364282792ac2b02a7314aa299923ac
