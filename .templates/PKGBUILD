@@ -9,9 +9,14 @@ license=()
 depends=()
 
 source=()
+# add dummy entries for `make generate-checksums` to create SHA256 instead of MD5 check sums
 sha256sums=()
 
 prepare() {
+  true
+}
+
+build() {
   true
 }
 
