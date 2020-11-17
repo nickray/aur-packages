@@ -4,8 +4,9 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-	remote = none
+	remote = ssh://aur@aur.archlinux.org/amigaos-xfwm4-themes.git
 	branch = master
-	commit = 
+	commit = 95a2aff3394e934d82b503deea8c62bbd365b28f
 	method = merge
 	cmdver = 0.4.1
+	parent = 994b40190f821fe569ada4ca2d1462daecc9709c
