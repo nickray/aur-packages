@@ -4,9 +4,9 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-	remote = git@github.com:nickray/aur-jamm-bin
+	remote = ssh://aur@aur.archlinux.org/jamm-bin.git
 	branch = master
-	commit = b2ea1ec8d86eab73e1558db5a9716c419af619e4
-	parent = 54c2d93636874101abe693a8f14b264368109ff2
+	commit = 4fd93174cb01083adc7df9db4477b19808a8746c
+	parent = 006943d27c54bfb6e1399886ecd9a8769882186c
 	method = merge
 	cmdver = 0.4.1
