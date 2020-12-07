@@ -1,0 +1,24 @@
+# Maintainer: Nicolas Stalder <n+archlinux@stalder.io>
+pkgname=sidekick
+pkgver=87.7.36.5760
+pkgrel=1
+pkgdesc="The fastest work environment ever made"
+url="https://www.meetsidekick.com"
+arch=(any)
+license=()
+depends=()
+
+source=("https://cdn.meetsidekick.com/builds/sidekick-linux-release-x64-${pkgver}-3337aef.deb")
+sha256sums=(1836b61ccc59b4467280865c3b0df26301545b12415229a2a98394f9419a2389)
+
+prepare() {
+  tar xf data.tar.xz
+}
+
+package() {
+  for subdir in etc opt usr
+  do
+    install -d ${pkgdir}/${subdir}/
+    cp -r ${srcdir}/${subdir}/* ${pkgdir}/${subdir}/
+  done
+}

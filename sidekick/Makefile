@@ -1,4 +1,4 @@
-PKG := TEMPLATE
+PKG := sidekick
 
 build:
 	makepkg -f
