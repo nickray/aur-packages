@@ -4,9 +4,9 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-	remote = git@github.com:nickray/aur-xcaddy-bin
+	remote = ssh://aur@aur.archlinux.org/xcaddy-bin.git
 	branch = master
-	commit = 38d66ae17347cb17c99ebd60efb21f82b9b8b180
-	parent = 60953fa2e46c2b905633ab5eb08fd1ff7ebaf6a3
+	commit = 758eb3d7cfffada0a43a9087ebfbc26d6d59dbd7
+	parent = 485443baec3a35ffae9bb10656991b4f4fffa0a4
 	method = merge
 	cmdver = 0.4.1
