@@ -1,0 +1,9 @@
+pkgbase = shopify-cli
+	pkgver = tba
+	pkgrel = 1
+	arch = any
+	source = https://github.com/Shopify/shopify-app-cli/releases/download/v1.5.0/shopify-cli-1.5.0.deb
+	sha256sums = 123
+
+pkgname = shopify-cli
+
