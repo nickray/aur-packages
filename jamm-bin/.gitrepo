@@ -6,7 +6,7 @@
 [subrepo]
 	remote = ssh://aur@aur.archlinux.org/jamm-bin.git
 	branch = master
-	commit = f5786176d984a8fc840eb778e908c0933b7893d6
-	parent = 3b89463e62fd8a092346204ff1f6f6eccc262ebc
+	commit = 0c97a7bf2557482d3db043d95a08f36cbf1dd090
+	parent = 711665b655a771e416760757ff76450b58a1797e
 	method = merge
-	cmdver = 0.4.1
+	cmdver = 0.4.3
