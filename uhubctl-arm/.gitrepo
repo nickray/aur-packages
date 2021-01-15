@@ -4,8 +4,9 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-	remote = none
+	remote = ssh://aur@aur.archlinux.org/uhubctl-arm.git
 	branch = master
-	commit = 
+	commit = 93be8cc39f941d2044d6516a06ec72fbf5d46c3b
 	method = merge
 	cmdver = 0.4.3
+	parent = 209337e18992a8286326a709d5b30c6981ef74fe
