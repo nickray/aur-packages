@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://aur.archlinux.org/littlefs-fuse.git
+	branch = master
+	commit = 2f812246079a620c22c4bd8fcc37f99061bbb509
+	parent = 12daa91abac9a1af273d7e6db2ffcabbc9336b6e
+	method = merge
+	cmdver = 0.4.3
