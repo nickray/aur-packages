@@ -4,9 +4,9 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-	remote = https://aur.archlinux.org/littlefs-fuse.git
+	remote = ssh://aur@aur.archlinux.org/littlefs-fuse.git
 	branch = master
-	commit = 2f812246079a620c22c4bd8fcc37f99061bbb509
-	parent = 12daa91abac9a1af273d7e6db2ffcabbc9336b6e
+	commit = bc299ff417006bfdbe2801fff54be64c8653a5d2
+	parent = 56a09e4a9ec8bddd93cc1dfbb1b2059d6b5448b0
 	method = merge
 	cmdver = 0.4.3
