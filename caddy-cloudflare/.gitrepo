@@ -4,9 +4,9 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-	remote = git@github.com:nickray/aur-caddy-cloudflare
+	remote = ssh://aur@aur.archlinux.org/caddy-cloudflare.git
 	branch = master
-	commit = 2655c9c2b5e3b194b2b2017ad612074246795cfb
-	parent = e3b19ad72800eb79d600ac7a23c59e9b02e655fc
+	commit = 666b0716c42881a3bf21bfe67b93435f0c5264bb
+	parent = ff1de8a9f39632d9d1fba957e3e0ae58d9d07f2d
 	method = merge
-	cmdver = 0.4.1
+	cmdver = 0.4.3
