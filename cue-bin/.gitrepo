@@ -4,8 +4,9 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-	remote = none
+	remote = ssh://aur@aur.archlinux.org/cue-bin.git
 	branch = master
-	commit = 
+	commit = 7924711151f122159f5752fd67b1118f2ec6f26f
 	method = merge
 	cmdver = 0.4.3
+	parent = eab23111c28bfd36376d7d21966e884d507177ab
