@@ -6,7 +6,7 @@
 [subrepo]
 	remote = ssh://aur@aur.archlinux.org/uhubctl-arm.git
 	branch = master
-	commit = 93be8cc39f941d2044d6516a06ec72fbf5d46c3b
+	commit = 61da082188af7248c6e909d8d842a08b0dcc8abc
 	method = merge
 	cmdver = 0.4.3
-	parent = 209337e18992a8286326a709d5b30c6981ef74fe
+	parent = f46500983e69684ccc3617ddef7f3ea2cf5b545b
