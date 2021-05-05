@@ -4,8 +4,9 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-	remote = none
+	remote = ssh://aur@aur.archlinux.org/grml-systemd-boot.git
 	branch = master
-	commit = 
+	commit = 3db5c9ca4cd8adb27c899b817669173de91de90d
 	method = merge
 	cmdver = 0.4.3
+	parent = e2570adbde979ec5d9c617813be0c0fff79ecef0
