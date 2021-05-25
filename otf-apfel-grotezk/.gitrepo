@@ -4,9 +4,9 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-	remote = ssh://aur@aur.archlinux.org/otf-apfel-grotezk
+	remote = ssh://aur@aur.archlinux.org/otf-apfel-grotezk.git
 	branch = master
-	commit = 372a02491ade3e5c1616699117191dabf4033b86
-	parent = da419f90bd83129b6a3cf05f199c4f4e579cbd86
+	commit = c9e3220b3a6fe57fa787a8b5724dfabb9a56007b
+	parent = c2a470267ad68c321f9393fc3860f8730e9fda43
 	method = merge
-	cmdver = 0.4.1
+	cmdver = 0.4.3
