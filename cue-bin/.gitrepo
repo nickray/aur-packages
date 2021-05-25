@@ -6,7 +6,7 @@
 [subrepo]
 	remote = ssh://aur@aur.archlinux.org/cue-bin.git
 	branch = master
-	commit = 2406b257953403db85d57e63eee760e1edddf9c9
+	commit = 00df327d280903c1afc8931164c7297c9bb8eb5d
 	method = merge
 	cmdver = 0.4.3
-	parent = 5aa9d866444f934a7c8d55f8fd4973d56a6dca8d
+	parent = 8052123979c230d3d586e4a784718b866553abaa
