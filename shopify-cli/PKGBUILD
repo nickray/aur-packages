@@ -1,18 +1,18 @@
 # Maintainer: Nicolas Stalder <n+archlinux@stalder.io>
 _gemname=shopify-cli
 pkgname=shopify-cli
-pkgver=1.5.0
+pkgver=1.14.0
 pkgrel=1
 pkgdesc=""
 url=""
 arch=(any)
 license=(MIT)
-depends=()
+depends=(ruby)
 
 source=(https://rubygems.org/downloads/$pkgname-$pkgver.gem)
 noextract=($pkgname-$pkgver.gem)
 # add dummy entries for `make generate-checksums` to create SHA256 instead of MD5 check sums
-sha256sums=("ed9b3c3dd72c4b2e39fe037932caa9a05d2b311cbcde045fe85b46413ab1b51e")
+sha256sums=("aa43a873c117ad7d14fcfc7e9a3bab14fd236a24594bad3b93806ee8645b8a01")
 
 prepare() {
   true
@@ -35,6 +35,7 @@ package() {
   local _gemdir="$(ruby -e 'puts Gem.default_dir')"
   gem install --ignore-dependencies --no-user-install -i "$pkgdir/$_gemdir" -n "$pkgdir/usr/bin" $_gemname-$pkgver.gem
   rm "$pkgdir/$_gemdir/cache/$_gemname-$pkgver.gem"
-  ln -s /usr/lib/ruby/gems/2.7.0/gems/shopify-cli-1.5.0/bin/shopify.sh $pkgdir/usr/bin/shopify
-  install -D -m644 "$pkgdir/usr/lib/ruby/gems/2.7.0/gems/shopify-cli-1.5.0/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+  mkdir -p $pkgdir/usr/bin
+  ln -s /usr/lib/ruby/gems/3.0.0/gems/shopify-cli-${pkgver}/bin/shopify.sh $pkgdir/usr/bin/shopify
+  install -D -m644 "$pkgdir/usr/lib/ruby/gems/3.0.0/gems/shopify-cli-${pkgver}/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }
