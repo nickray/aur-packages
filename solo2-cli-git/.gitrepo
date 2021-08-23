@@ -4,8 +4,9 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-	remote = none
+	remote = ssh://aur@aur.archlinux.org/solo2-cli-git.git
 	branch = master
-	commit = 
+	commit = 1ad1e3edc78be875be858731955e2d37286e4d01
 	method = merge
 	cmdver = 0.4.3
+	parent = 0353b922a12ac7cb5907b3126a9582ca79c622a2
