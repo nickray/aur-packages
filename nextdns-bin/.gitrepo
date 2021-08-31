@@ -4,8 +4,9 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-	remote = none
+	remote = ssh://aur@aur.archlinux.org/nextdns-bin.git
 	branch = master
-	commit = 
+	commit = f751da90da952c71e674c7d6160e8409fba1d448
 	method = merge
 	cmdver = 0.4.3
+	parent = c522a4a25ee2322d1e80acdc96da99f03f385665
