@@ -6,7 +6,7 @@
 [subrepo]
 	remote = ssh://aur@aur.archlinux.org/caddy-cloudflare.git
 	branch = master
-	commit = a2f606516818a4fb989d168208ab4c07e4f4de23
-	parent = ce1ce9be441c08adcb31aa821ecfdd06bdc98e4a
+	commit = 2cb42f9fc17edfabcc608dbd2c13844ef87f8308
+	parent = 70bdf4e6b88bed9d7685f1364800bac6608160e8
 	method = merge
 	cmdver = 0.4.3
