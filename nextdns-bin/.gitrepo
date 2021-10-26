@@ -6,7 +6,7 @@
 [subrepo]
 	remote = ssh://aur@aur.archlinux.org/nextdns-bin.git
 	branch = master
-	commit = d3b1bebe8b0e01e9d0ce5ee71b13119a6850cb9e
+	commit = e73f72060d2f29510398a93a7cd8de6f5ebb231b
 	method = merge
 	cmdver = 0.4.3
-	parent = f04b5016b924668d88e2d1ba48f81f85e5e4c076
+	parent = 5ebbcb6b1ce87c843fae954e4157086003be7e1b
