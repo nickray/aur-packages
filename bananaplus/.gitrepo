@@ -6,7 +6,7 @@
 [subrepo]
 	remote = ssh://aur@aur.archlinux.org/bananaplus.git
 	branch = master
-	commit = 886b903c544d460bbaa42eb5e813c98b02993b1b
+	commit = d7e86fc56026807e9efdf01e3a9519af457fc3f8
 	method = merge
 	cmdver = 0.4.3
-	parent = cd71cd6dd21b1ec59b2c3b518c2b8e9544a26764
+	parent = f5985a595df87bc3ea780bfc5adebcc9f2e494b5
