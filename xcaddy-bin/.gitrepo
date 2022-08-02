@@ -6,7 +6,7 @@
 [subrepo]
 	remote = ssh://aur@aur.archlinux.org/xcaddy-bin.git
 	branch = master
-	commit = ba2b6a21ad6d62d8eb6bc142b6902bb484794640
-	parent = e81852970abaf9a5b6412b68ce587a211dcb9dae
+	commit = fffbb4a7a3c08a17a06f0e40c1529caf925e8e5c
+	parent = 4fa50c2b86df77ba211c5beac25c4fa9c03a05e0
 	method = merge
 	cmdver = 0.4.3
