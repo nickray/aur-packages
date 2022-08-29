@@ -4,8 +4,9 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-	remote = none
+	remote = ssh://aur@aur.archlinux.org/padloc-bin.git
 	branch = master
-	commit = 
+	commit = 6e33a53628d84eeef52426c4974d4293a77869ef
 	method = merge
 	cmdver = 0.4.3
+	parent = 894a3e43f1465f17143a057360e6e7ce85912572
