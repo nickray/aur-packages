@@ -4,8 +4,9 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-	remote = none
+	remote = ssh://aur@aur.archlinux.org/grafana-pcp-bin.git
 	branch = master
-	commit = 
+	commit = aca72c4548ca7bcc370c6d541b0f078cbb28f62f
 	method = merge
 	cmdver = 0.4.3
+	parent = ba36306f8005528c6f6008a1921ebf742f67b9f0
