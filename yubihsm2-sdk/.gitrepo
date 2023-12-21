@@ -6,7 +6,7 @@
 [subrepo]
 	remote = ssh://aur@aur.archlinux.org/yubihsm2-sdk.git
 	branch = master
-	commit = fceac84ab3b7d31ecf61fcf2e412647362673db6
-	parent = 468ac813a07db0227a8c43ec77e8fd8666441795
+	commit = 88da29e2bdbbf5f2b904f5c6aeae0e8ecd7aff38
+	parent = 2f3193f128ea4e6f7b56f21c7bbdf2a2ee045c79
 	method = merge
-	cmdver = 0.4.3
+	cmdver = 0.4.6
