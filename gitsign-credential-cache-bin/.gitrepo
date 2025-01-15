@@ -4,8 +4,9 @@
 ; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
 ;
 [subrepo]
-	remote = none
-	branch = main
-	commit = 
+	remote = ssh://aur@aur.archlinux.org/gitsign-credential-cache-bin.git
+	branch = master
+	commit = 34bd2efb23db097394e5fa1ebf03891e815030fe
 	method = merge
 	cmdver = 0.4.9
+	parent = f10445d626ac9504ac48238e8f72d33be51e0632
