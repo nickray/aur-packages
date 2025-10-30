@@ -1,4 +1,5 @@
 # Maintainer: Nicolas Stalder <n+archlinux@stalder.io>
+# Contributor: Asen <i at asen dot page>
 pkgname=caddy-cloudflare
 pkgver=2.10.2
 pkgrel=1
@@ -6,41 +7,54 @@ pkgdesc="Caddy web server"
 arch=('any')
 url="https://github.com/caddyserver/caddy"
 license=('Apache-2.0')
-makedepends=('go' 'xcaddy')
+depends=('glibc' 'mailcap')
+makedepends=('go' 'git')
 provides=("caddy")
 conflicts=("caddy")
 source=(
+  "git+https://github.com/AsenHu/caddy-builder.git#tag=v${pkgver}"
   "Caddyfile"
   "caddy.service"
+  "caddy-api.service"
   "caddy.sysusers"
   "caddy.tmpfiles"
   "Caddyfile-example"
 )
-sha256sums=(
-  "SKIP"
-  "SKIP"
-  "SKIP"
-  "SKIP"
-  "SKIP"
+backup=(
+  etc/caddy/Caddyfile
 )
-backup=("etc/caddy/Caddyfile")
+source=("git+https://github.com/AsenHu/caddy-builder.git#tag=v${pkgver}"
+        caddy.service
+        caddy-api.service
+        caddy.tmpfiles
+        caddy.sysusers
+        Caddyfile)
+sha256sums=('d732a3cac58302575b74611be19eca674962e807d3c2d2af6e2c514bcfe41104'
+            '03db8a5053bd5e058af146c06f181f740a0f3685c6fb070bcdb54597643e4d7a'
+            '37c5172158d6950618f1b26ecfbf565b1c5343b3925ae05ca03f25ac241918f3'
+            '1beafcb0e34e966a9536be89138a54e3a916bf9dcc40f2963e573152013daf0f'
+            'e69ae147c6b7eb92fe428c29c3ed96bfd4ab62d5fb7de3bf65ad7ffccde66df6'
+            '8a79e0e9b6ace96850ec02cce31e6d41a6136d5ab44e517801b5668fb9c18372')
 
 build() {
-  xcaddy build v${pkgver} --with github.com/caddy-dns/cloudflare
+  cd "caddy-builder/cmd/cloudflare/" || exit 1
+  export CGO_LDFLAGS="${LDFLAGS}"
+  export CGO_CPPFLAGS="${CPPFLAGS}"
+  export CGO_CFLAGS="${CFLAGS}"
+  export CGO_CXXFLAGS="${CXXFLAGS}"
+  export GOFLAGS="-buildmode=pie -trimpath -ldflags=-linkmode=external -mod=readonly -modcacherw"
+  go build .
 }
 
 package() {
-  # Install the executables
-  install -d "$pkgdir"/usr/bin/
-  install -m 755 caddy "$pkgdir"/usr/bin/
-
-  # Basic configuration with example
-  install -Dm 644 "${srcdir}/Caddyfile" "${pkgdir}/etc/caddy/Caddyfile"
-  install -d "${pkgdir}/etc/caddy/conf.d"
-  install -Dm 644 "${srcdir}/Caddyfile-example" -t "${pkgdir}/etc/caddy/conf.d"
+  cd "caddy-builder" || exit 1
+  install -Dm 755 cmd/cloudflare/caddy -t "${pkgdir}/usr/bin"
 
   # Systemd service setup
-  install -Dm 644 "${srcdir}/caddy.service" -t "${pkgdir}/usr/lib/systemd/system"
+  install -Dm 644 "${srcdir}/caddy.service" "${srcdir}/caddy-api.service" -t "${pkgdir}/usr/lib/systemd/system"
   install -Dm 644 "${srcdir}/caddy.sysusers" "${pkgdir}/usr/lib/sysusers.d/caddy.conf"
   install -Dm 644 "${srcdir}/caddy.tmpfiles" "${pkgdir}/usr/lib/tmpfiles.d/caddy.conf"
+  install -Dm 644 "${srcdir}/caddy.sysusers" "${pkgdir}/usr/lib/sysusers.d/caddy.conf"
+
+  install -Dm 644 "${srcdir}/Caddyfile" -t "${pkgdir}/etc/caddy"
 }
