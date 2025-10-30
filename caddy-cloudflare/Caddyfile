@@ -1,1 +1,2 @@
-import /etc/caddy/conf.d/*
+:2077
+respond "Hello, world!"
