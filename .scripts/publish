@@ -11,7 +11,7 @@ cd $pkg
 
 make clean
 make build
-make install
+#make install
 make update-srcinfo
 
 git add .
