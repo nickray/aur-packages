@@ -6,7 +6,7 @@
 [subrepo]
 	remote = ssh://aur@aur.archlinux.org/grml-systemd-boot.git
 	branch = master
-	commit = 175a7e2b46f38bb9b6f4e689f79b328ba9d46df5
+	commit = 843cd29bdb69dcf00fcb289ed17dcbb94b297794
 	method = merge
-	cmdver = 0.4.6
-	parent = 41da1efb5e4fdf1c019e436c069292c9082c5fff
+	cmdver = 0.4.9
+	parent = fc979622e8e910e6a9176d0326b7da6ac5bc9223
