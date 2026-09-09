@@ -2,7 +2,7 @@
 Description=Caddy webserver
 Documentation=https://caddyserver.com/docs/
 After=network-online.target
-Wants=network-online.target systemd-networkd-wait-online.service
+Wants=network-online.target
 StartLimitIntervalSec=14400
 StartLimitBurst=10
 
