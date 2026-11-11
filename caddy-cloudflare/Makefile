@@ -12,6 +12,7 @@ clean:
 
 update-srcinfo:
 update-srcinfo:
+	updpkgsums
 	makepkg --printsrcinfo > .SRCINFO
 
 generate-checksums:
